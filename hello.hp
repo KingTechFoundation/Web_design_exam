@@ -1,0 +1,68 @@
+<?php
+session_start();
+require_once '../config/db_connection.php';
+
+
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'Admin') {
+    header('Location: ../auth/login.php');
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Welcome, <?= htmlspecialchars($_SESSION['username']); ?> (Admin)</h2>
+    <p>This is the admin dashboard.</p>
+    <a href="../auth/logout.php" class="btn btn-outline-danger mb-3">Logout</a>
+
+   <!-- Buttons Row -->
+<div class="d-flex gap-2 my-3">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
+        Add Employee
+    </button>
+
+    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#sendNotificationModal">
+        Send Notification
+    </button>
+
+    <button class="btn btn-info my-3" data-bs-toggle="modal" data-bs-target="#assignTaskModal">
+    Assign Task
+    </button>
+    
+</div>
+
+
+
+
+
+
+<!-- Assign Task Modal -->
+<?php include '../components/add_employee_modal.php'; ?>
+<?php include '../components/task_table.php'; ?>
+<?php include '../components/send_notification_modal.php'; ?>
+<?php include '../components/employee_table.php'; ?>
+<?php include '../components/assign_task_modal.php'; ?>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/admin.js"></script>
+<script src="../js/attendance.js"></script>
+<script src="../js/notifications.js"></script>
+<script src="../js/tasks.js"></script>
+<script src="../js/manage_tasks.js"></script>
+<script src="../js/search.js"></script>
+
+
+
+
+</body>
+</html>

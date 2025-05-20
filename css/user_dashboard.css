@@ -1,0 +1,135 @@
+/* Reset basic styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container setup */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #1e3a5f; /* Navy Blue */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.sidebar-header i {
+    margin-right: 10px;
+    font-size: 2em;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.sidebar-menu li {
+    margin-bottom: 20px;
+}
+
+.sidebar-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1em;
+    transition: background 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar-menu a:hover {
+    background-color: #30507c;
+}
+
+.sidebar-menu i {
+    margin-right: 10px;
+}
+
+/* Notification badge */
+.badge {
+    background-color: #00bfa6; /* Teal accent */
+    color: #fff;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 0.8em;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #ffffff; /* Light background */
+    overflow-y: auto;
+}
+
+.main-content h2 {
+    margin-top: 0;
+    color: #1e3a5f;
+}
+
+/* Notifications list */
+.notification-list {
+    list-style: none;
+    padding: 0;
+}
+
+.notification {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+.notification:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification.unread {
+    background-color: #e6f7ff;
+    font-weight: bold;
+}
+
+.notification.read {
+    background-color: #f1f1f1;
+}
+
+.mark-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #00bfa6;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.mark-btn:hover {
+    background-color: #009e8a;
+}
