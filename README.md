@@ -19,7 +19,7 @@ A dynamic web-based HR management platform that allows HR/Admin to manage employ
 
 ---
 
-## 📂 Technologies Used
+##  Technologies Used
 
 - HTML
 - CSS
@@ -29,9 +29,9 @@ A dynamic web-based HR management platform that allows HR/Admin to manage employ
 
 ---
 
-## 🖥️ System Screenshots
+##  System Screenshots
 
-### 1. 🔐 Login Page
+### 1.  Login Page
 
 This is the login page where HR and Employees enter their credentials.
 
@@ -39,11 +39,11 @@ This is the login page where HR and Employees enter their credentials.
 
 ---
 
-### 2. 🧑‍💼 HR Dashboard
+### 2. HR Dashboard
 
 After login, HR sees a dashboard with options to manage the system.
 
-![Dashboard](images/dashboard.png)
+![Dashboard](images/HRdashboard.png)
 
 ---
 
@@ -51,19 +51,19 @@ After login, HR sees a dashboard with options to manage the system.
 
 HR can register a new employee using this form.
 
-![Add Employee](images/add-employee.png)
+![Add Employee](images/addemployee.png)
 
 ---
 
-### 4. 📝 Assign Task
+### 4.  Assign Task
 
 Tasks can be assigned to specific employees.
 
-![Assign Task](images/assign-task.png)
+![Assign Task](images/assigntasks.png)
 
 ---
 
-### 5. 📅 Mark Attendance
+### 5.  Mark Attendance
 
 HR or employee can mark attendance with a timestamp.
 
@@ -71,23 +71,23 @@ HR or employee can mark attendance with a timestamp.
 
 ---
 
-### 6. 📨 View Messages (Employee)
+### 6.  View Messages (Employee)
 
 Employee can login and see messages or tasks sent by admin.
 
-![Messages](images/messages.png)
+![Messages](images/usernot.png)
 
 ---
 
-### 7. 🧾 Generate Reports
+### 7.  Generate Reports
 
 HR can generate and print employee and attendance reports.
 
-![Reports](images/reports.png)
+![Reports](images/report.png)
 
 ---
 
-## ✅ Security & Validations
+##  Security & Validations
 
 - Strong password and input validation
 - Login error messages for invalid credentials
@@ -96,7 +96,7 @@ HR can generate and print employee and attendance reports.
 
 ---
 
-## 🎯 Objectives Achieved
+##  Objectives Achieved
 
 - Simplified HR tasks using automation
 - Enhanced communication through notifications
@@ -105,12 +105,12 @@ HR can generate and print employee and attendance reports.
 
 ---
 
-## 💡 Innovation Highlights
+##  Innovation Highlights
 
 - Dynamic message and task system
 - Attendance recorded with timestamps
 - Filter-based report generation
-- Clean and modern UI using only 3 colors
+
 - Secure login and validation system
 
 ---
